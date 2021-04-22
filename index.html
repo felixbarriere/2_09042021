@@ -19,8 +19,8 @@
                               
                        
             <nav>   
-                    <a class="li_header" href="#">Hebergement</a> 
-                    <a class="li_header" href="#">Activités</a>
+                    <a class="li_header" href="#hebergement_anchor">Hebergement</a> 
+                    <a class="li_header" href="#activites_anchor">Activités</a>
                     <a class="li_header" href="#">S'inscrire</a>              
             </nav>
         </header>
@@ -35,7 +35,7 @@
                     <div id="rechercher"> 
                         <div id="logo_maps">.</div>
                         <input id="search" type="search"></input>
-                        <input id="button"  type="button" value="rechercher"> </div>
+                        <input type="button" class="button_style" value="rechercher" ></input>
                     </div>
                     <div id="filters" >                                                   
                         <div class="filter_title">
@@ -74,85 +74,143 @@
             
                 </div>
 
+                
 <!-- Hebergements -->
-
+            <balise id=hebergement_anchor></balise>
             <div id="hebergement_populaires">
                 <div id="hebergement">
-                    <h2>Hébergements à Marseille</h2>
-                    <div id="hebergement_répartition">
-                        <div id="hebergement_bloc">
-                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" id="hebergement_image" alt="image hebergement 1" />
+                                       
+                        <h2 class="header_hebergement">Hébergements à Marseille</h2>
+                        <div class="hebergement_bloc">
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="image" alt="image hebergement 1" />
                             <h3>Auberge la Cannebière</h3>
                             <span>Nuits à partir de 25€</span>
                             <div id="stars_1"></div>
                         </div>
-                        <div id="hebergement_bloc">
-                            <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" id="hebergement_image" alt="image hebergement 2" />
+                        <div class="hebergement_bloc">
+                            <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="image" alt="image hebergement 2" />
                             <h3>Hôtel du port</h3>
                             <span>Nuits à partir de 52€</span>
                             <div id="stars_1"></div>
                         </div>
-                        <div id="hebergement_bloc">
-                            <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" id="hebergement_image" alt="image hebergement 3" />
+                        <div class="hebergement_bloc">
+                            <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" class="image" alt="image hebergement 3" />
                             <h3>Hôtel des mouettes</h3>
                             <span>Nuits à partir de 76€</span>
                             <div id="stars_1"></div>
                         </div>
-                        <div id="hebergement_bloc">
-                            <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" id="hebergement_image" alt="image hebergement 4" />
+                        <div class="hebergement_bloc">
+                            <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="image" alt="image hebergement 4" />
                             <h3>Hôtel de la mer</h3>
                             <span>Nuits à partir de 46€</span>
                             <div id="stars_1"></div>
                         </div>
-                        <div id="hebergement_bloc">
-                            <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" id="hebergement_image" alt="image hebergement 5" />
+                        <div class="hebergement_bloc">
+                            <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="image" alt="image hebergement 5" />
                             <h3>Auberge Le Panier</h3>
                             <span>Nuits à partir de 23€</span>
                             <div id="stars_1"></div>
                         </div>
-                        <div id="hebergement_bloc">
-                            <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" id="hebergement_image" alt="image hebergement 6" />
+                        <div class="hebergement_bloc">
+                            <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="image" alt="image hebergement 6" />
                             <h3>Hôtel chez Amina</h3>
                             <span>Nuits à partir de 96€</span>
                             <div id="stars_1"></div>
-                        </div>
-
-                    </div>
+                        </div>   
+                        <h3 class="header_hebergement"><a href="#">Afficher plus</a></h3>
                 </div>
+<!-- Hebergements populaires -->
                 <div id="populaires">
-                    <h2>Les plus populaires</h2>
-                    <div id="hebergement_répartition">
-                        <div id="hebergement_bloc">
-                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" id="hebergement_image" alt="image hebergement 1" />
-                            <h3>Auberge la Cannebière</h3>
-                            <span>Nuits à partir de 25€</span>
-                            <div id="stars_1"></div>
+                    <h2 id="header_populaire">Les plus populaires</h2>
+                    
+                        <div class="populaires_bloc">
+
+                            <div class="populaire__container_image">
+                                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="populaire_image" alt="image hebergement 1" />
+                            </div>  
+                            <div class="populaire_text">
+                                <h3>Hôter Soleil du matin</h3>
+                                <span>Nuits à partir de 128€</span>
+                                <div id="stars_1"></div>
+                            </div>  
                         </div>
-                    </div>
-                    <div id="hebergement_répartition">
-                        <div id="hebergement_bloc">
-                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" id="hebergement_image" alt="image hebergement 1" />
-                            <h3>Auberge la Cannebière</h3>
-                            <span>Nuits à partir de 25€</span>
-                            <div id="stars_1"></div>
+                    
+                        
+                        <div class="populaires_bloc">
+                            <div class="populaire__container_image">
+                                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" class="populaire_image" alt="image hebergement 1" />
+                            </div>
+                            <div class="populaire_text">
+                                <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                                <span>Nuits à partir de 71€</span>
+                                <div id="stars_1"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div id="hebergement_répartition">
-                        <div id="hebergement_bloc">
-                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" id="hebergement_image" alt="image hebergement 1" />
-                            <h3>Auberge la Cannebière</h3>
-                            <span>Nuits à partir de 25€</span>
-                            <div id="stars_1"></div>
+                        
+                        
+                        <div class="populaires_bloc">
+                            <div class="populaire__container_image">
+                                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="populaire_image" alt="image hebergement 1" />
+                            </div>
+                            <div class="populaire_text">
+                                <h3>Hôtel Tout bleu et Blanc</h3>
+                                <span>Nuits à partir de 68€</span>
+                                <div id="stars_1"></div>
+                            </div>
+                            
                         </div>
-                    </div>
+                        
+                    
                 </div>
             </div>
 
 <!-- Activités -->
-
-            <div id="activités">.</div>
-
-
+            <balise id="activites_anchor"></balise>
+            <div id="activites">
+                <h2>Activités à Marseille</h2>
+                <a class="activite_bloc" id="activite_1" href="#">
+                    <div class="image_activite_bloc">
+                        <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="image_activite_large" alt="image hebergement 1" />
+                    </div>
+                    
+                    <div class="text_activite"><h3>Auberge la Cannebière</h3></div>
+                </a>
+                <a class="activite_bloc" id="activite_2" href="#">
+                    <div class="image_activite_bloc">
+                        <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="image_activite_large" alt="image hebergement 1" />
+                    </div>
+                    
+                    <div class="text_activite"><h3>Fort de Pomègues</h3></div>
+                </a>
+                <a class="activite_bloc" id="activite_3" href="#">
+                    <div class="image_activite_bloc">
+                        <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" class="image_activite_large" alt="image hebergement 1" />
+                    </div>
+                    
+                    <div class="text_activite"><h3>Île du Frioul</h3></div>
+                </a>
+                <a class="activite_bloc" id="activite_4" href="#">
+                    <div class="image_activite_bloc">
+                        <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="image_activite_large" alt="image hebergement 1" />
+                    </div>
+                    
+                    <div class="text_activite"><h3>Parc National des Calanques</h3></div>
+                </a>
+                <a class="activite_bloc" id="activite_5" href="#">
+                    <div class="image_activite_bloc">
+                        <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="image_activite_large" alt="image hebergement 1" />
+                    </div>
+                    
+                    <div class="text_activite"><h3>Notre-Dame-de-la-Garde</h3></div>
+                </a>
+                <a class="activite_bloc" id="activite_6" href="#">
+                    <div class="image_activite_bloc">
+                        <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" class="image_activite_large" alt="image hebergement 1" />
+                    </div>
+                    
+                    <div class="text_activite"><h3>Parc Longchamp</h3></div>
+                </a>
+            </div>
         </section>
 </body>       
 <!-- Footer -->        
