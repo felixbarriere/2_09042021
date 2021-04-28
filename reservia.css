@@ -15,13 +15,20 @@ body
     margin: 0;
 }
 
-section
+#section_global
 {
     padding: 0 2rem 2rem 2rem;
     max-width: 1440px;
     margin: auto;
     box-sizing: border-box;
 }
+
+ul, li, #section_global, header {
+	list-style: none;
+}
+
+
+
 
 @media (max-width: 1000px)
 {
@@ -37,15 +44,14 @@ a
     color: black;
 }
 
-ul 
+.footer_ul 
 {
-    list-style-type: none;
     padding-left: 0px;
 }
 
 /**************************************header*/
 
-header
+#header_global
 {    
     max-width: 1440px;
     margin: auto;
@@ -74,6 +80,7 @@ header
     order: 2;
     display: flex;
     align-items: center;
+    margin-top: -1px;
 }
 
 .header
@@ -110,39 +117,44 @@ a
 
 @media (max-width: 1000px)
 {
-header
-{
-    grid-template-columns: auto 1fr auto;
-    grid-template-areas:
-        "logo . button"
-        "navbar navbar navbar";   
-}
+    #header_global
+    {
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas:
+            "logo . button"
+            "navbar navbar navbar";   
+    }
 
-#header_hebergement,#header_activites
-{
-    width: 50%;
-    text-align: center;
-    border-top: none;
-}
+    #header_hebergement,#header_activites
+    {
+        width: 50%;
+        text-align: center;
+        border-top: none;
+    }
 
-#header_hebergement
-{    
-    border-bottom: 3px solid #0065FC;    
-}
+    #header_hebergement
+    {    
+        border-bottom: 3px solid #0065FC;    
+    }
 
-#header_navbar
-{
-    grid-area: navbar;
-    order: 2;
-    display: flex;
-    align-items: center;
-}
+    #header_navbar
+    {
+        grid-area: navbar;
+        order: 2;
+        display: flex;
+        align-items: center;
+    }
 
-#header_activites:hover
-{   
-    border-bottom: 3px solid #0065FC;
-    border-top: none;
-} 
+    #header_activites
+    {
+        border-bottom: 3px solid rgb(241, 241, 241);
+    }
+
+    #header_activites:hover
+    {   
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+    } 
 }
 
 /*******************************************Main*/
@@ -594,12 +606,14 @@ footer
     display: flex;   
     padding: 0 2rem;
     box-sizing: border-box;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .footer_category
 {
     width: 30%;
-    padding: 0 2rem;
+    padding: 0 2rem 0 0;
 }
 
 .li_footer
@@ -607,8 +621,10 @@ footer
     margin: 1rem 0rem;
 }
 
+
+
 /*********************************************Footer*/
-/*********************************************Respponsive*/
+/*********************************************Responsive*/
 
 @media (max-width: 600px)
 {
